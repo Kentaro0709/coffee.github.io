@@ -55,7 +55,7 @@ li{
   padding: 90px 16px 150px 16px;
 }
 #header{
-  background-image: url(./img/mainvisual.jpg);
+  background-image: url(https://github.com/Kentaro0709/coffee.github.io/blob/main/mainvisual.jpg?raw=true);
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -83,7 +83,7 @@ nav li a:hover{
   margin-top: 20px;
 }
 #menu .menu-img{
-  background-image: url(./img/menu.jpg);
+  background-image: url(https://github.com/Kentaro0709/coffee.github.io/blob/main/menu.jpg?raw=true);
   position: relative;
 }
 #menu .menu-content{
@@ -119,7 +119,7 @@ nav li a:hover{
   margin-bottom: 55px;
 }
 #about .about-img{
-  background-image: url(./img/about.jpg);
+  background-image: url(https://github.com/Kentaro0709/coffee.github.io/blob/main/about.jpg?raw=true);
   position: relative;
 }
 #about .about-item{
@@ -190,7 +190,7 @@ nav li a:hover{
   width: 100%;
 }
 #location .location-img{
-  background-image: url(./img/location.jpg);
+  background-image: url(https://github.com/Kentaro0709/coffee.github.io/blob/main/location.jpg?raw=true);
   position: relative;
 }
 #location .location-item{
