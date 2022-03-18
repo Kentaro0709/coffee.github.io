@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%;
+}
+body{
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+.site-title{
+  text-align: center;
+  padding: 0 16px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+.sec-title{
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  font-size: 4.5rem;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  position: absolute;
+  top: 30%;
+}
+.item-title{
+  font-size: 2.5rem;
+  border-bottom: solid 6px #e03131;
+  display: inline-block;
+  margin-bottom: 70px;
+  /* text-align: center; */
+}
+.fixed-bg{
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.wrapper{
+  padding: 90px 16px 150px 16px;
+}
+#header{
+  background-image: url(./img/mainvisual.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+}
+nav li{
+  margin-left: 30px;
+}
+nav li a{
+  color: #fff;
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 2px #121212);
+  transition: all ease 0.3s;
+}
+nav li a:hover{
+  color: #e03131;
+}
+#menu{
+  margin-top: 20px;
+}
+#menu .menu-img{
+  background-image: url(./img/menu.jpg);
+  position: relative;
+}
+#menu .menu-content{
+  display: flex;
+}
+#menu .menu-item{
+  width: 50%;
+  padding: 0 45px;
+  text-align: center;
+}
+#menu .menu-item:first-child{
+  border-right: solid 1px #000;
+}
+#menu .menu-item dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+#menu .menu-item dl:nth-child(2){
+  margin-bottom: 50px;
+}
+#menu .menu-item dt{
+  width: 87%;
+  margin-bottom: 25px;
+  border-bottom: dotted 1px #000;
+  text-align: left;
+}
+#menu .menu-item dd{
+  width: 13%;
+  padding-top: 8px;
+  text-align: right;
+}
+#menu .menu-item dl.food{
+  margin-bottom: 55px;
+}
+#about .about-img{
+  background-image: url(./img/about.jpg);
+  position: relative;
+}
+#about .about-item{
+  text-align: center;
+}
+#about ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+#about li{
+  width: 50%;
+  padding: 2%;
+  text-align: left;
+  line-height: 2;
+}
+#about .btn{
+  width: 160px;
+  height: 50px;
+  display: inline-block;
+  color: #000;
+  cursor: pointer;
+  padding: 0;
+  transition: all ease 0.3s;
+  position: relative;
+  line-height: 3.5;
+}
+#about .btn span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#about .btn::before,
+#about .btn::after{
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .btn span::before,
+#about .btn span::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all ease 0.3s;
+}
+#about .btn::before,
+#about .btn span::before{
+  width: 2px;
+  height: 50%;
+}
+#about .btn::after,
+#about .btn span::after{
+  width: 20%;
+  height: 2px;
+}
+#about .btn:hover::before,
+#about .btn span:hover::before{
+  height: 100%;
+}
+#about .btn:hover::after,
+#about .btn span:hover::after{
+  width: 100%;
+}
+#location .location-img{
+  background-image: url(./img/location.jpg);
+  position: relative;
+}
+#location .location-item{
+  text-align: center;
+}
+#location .item-info{
+  text-align: left;
+}
+#location .item-map{
+  filter: grayscale(1);
+  margin-bottom: 20px;
+}
+#location .item-map iframe{
+  width: 100%;
+  height: 400px;
+}
+#location .item-info p{
+  margin-bottom: 10px;
+}
+#footer{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.5rem; 
+}
+@media screen and (max-width: 767px){
+  .site-title{
+    top: 42%;
+  }
+  .sec-title{
+    font-size: 2rem;
+    top: 26%;
+  } 
+  .fixed-bg{
+    height: 94px;
+    background-attachment: scroll;
+  }
+  .item-title{
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+  .wrapper{
+    padding: 30px 16px 60px 16px;
+  }
+  #menu{
+    margin-top: 10px;
+  }
+  #menu .menu-content{
+    flex-direction: column;
+  }
+  #menu .menu-item{
+    width: 100%;
+    padding: 0;
+  }
+  #menu .menu-item dl{
+    margin-bottom: 10px;
+  }
+  #menu .menu-item dl.food{
+    margin-bottom: 10px;
+  }
+  #menu .menu-item:first-child{
+    border-right: none;
+  }
+  #about ul{
+    flex-direction: column;
+  }
+  #about li{
+    width: 100%;
+  }
+}
